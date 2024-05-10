@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 664px;
+  margin: 0 auto;
+}
+
+.header {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 32px 0 32px;
+}
+
+.headerTitle {
+  flex: 1;
+  font: bold 40px helvetica;
+}
+
+.bigGreenButton {
+  background: #1b9c7b;
+  border-radius: 8px;
+  border: none;
+  padding: 16px 24px;
+  color: white;
+  font: bold 16px helvetica;
+  text-decoration: none;
+  transition: background-color 100ms ease-in-out;
+
+  &:hover {
+    background: darken(#1b9c7b, 5%);
+  }
+
+  &:active {
+    background: darken(#1b9c7b, 10%);
+  }
+}

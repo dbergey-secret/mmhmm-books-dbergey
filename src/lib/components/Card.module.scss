@@ -1,0 +1,48 @@
+.root {
+  background: white;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  padding: 8px;
+  flex-direction: row;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin: 32px;
+  max-width: 664px;
+}
+
+.cover,
+.info {
+  margin: 8px;
+}
+
+.title {
+  font: bold 18px Helvetica;
+  margin: 0;
+}
+.author {
+  font: 11px Helvetica;
+  margin: 16px 0;
+  color: #666666;
+}
+.description {
+  font: 13px/20px Helvetica;
+}
+
+.deleteButton {
+  appearance: none;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background: white;
+  display: inline-block;
+  font-size: 18px;
+  transition: background-color 100ms ease-in-out;
+
+  &:hover {
+    background: darken(white, 5%);
+  }
+
+  &:active {
+    background: darken(white, 10%);
+  }
+}

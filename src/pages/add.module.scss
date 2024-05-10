@@ -1,0 +1,48 @@
+@import "@/lib/shared.scss";
+
+.main {
+  max-width: 632px;
+}
+.form {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  flex: 1;
+  padding: 12px 0;
+  font: bold 14px Helvetica;
+}
+
+.input,
+.textarea {
+  flex: 1;
+  font: 24px Helvetica;
+  margin: 0 0 32px 0;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.textarea {
+  min-height: 100px;
+}
+
+.closeButton {
+  font: 56px Helvetica;
+  text-decoration: none;
+  color: darkgray;
+  transition: color 100ms ease-in-out;
+
+  &:hover {
+    color: darken(darkgray, 5%);
+  }
+
+  &:active {
+    color: darken(darkgray, 10%);
+  }
+}
+
+.buttonArea {
+  margin-top: 32px;
+}
